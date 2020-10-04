@@ -418,14 +418,11 @@ demo = {
       type: 'line',
       data: data,
       options: gradientChartOptionsConfigurationWithTooltipGreen
-
     });
-
-
 
     var chart_labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
     var chart_data = [10, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100];
-    
+    var chart_data2 = [100, 30, 60, 50, 25, 80, 95, 100, 20, 40, 100, 40];
 
     var ctx = document.getElementById("chartBig1").getContext('2d');
 
@@ -454,7 +451,24 @@ demo = {
           pointHoverBorderWidth: 15,
           pointRadius: 4,
           data: chart_data,
-        }]
+        },
+        {
+            label: "My First dataset",
+            fill: true,
+            backgroundColor: gradientStroke,
+            borderColor: '#d346b1',
+            borderWidth: 2,
+            borderDash: [],
+            borderDashOffset: 0.0,
+            pointBackgroundColor: '#d346b1',
+            pointBorderColor: 'rgba(255,255,255,0)',
+            pointHoverBackgroundColor: '#d346b1',
+            pointBorderWidth: 20,
+            pointHoverRadius: 4,
+            pointHoverBorderWidth: 15,
+            pointRadius: 4,
+            data: chart_data2,
+          }]
       },
       options: gradientChartOptionsConfigurationWithTooltipPurple
     };
